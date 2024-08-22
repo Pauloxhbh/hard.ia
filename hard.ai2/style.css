@@ -1,0 +1,134 @@
+/* Estilos Gerais */
+body {
+    font-family: "Outfit", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do Cabeçalho */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-left, .header-right {
+    font-size: small;
+}
+
+.header-link {
+    padding: 10px;
+    color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.header-link:hover {
+    color: #00bfff;
+}
+
+/* Estilos do Main e Seções */
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
+    padding: 20px;
+    margin-bottom: 80px; /* Espaço suficiente para o rodapé */
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px; /* Espaçamento entre ícones */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon img {
+    width: 50px; /* Tamanho das imagens dos ícones */
+    height: auto;
+}
+
+.icon p {
+    margin-top: 5px;
+}
+
+.remove-filter {
+    background-color: #f44336; /* Cor para remover filtro */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.remove-filter:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilos dos Cards */
+.products {
+    margin-top: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-name {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.vendor-name, .price {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
